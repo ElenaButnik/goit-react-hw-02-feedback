@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import s from "./FeedbackOptions.module.css"
 
 export function FeedbackOptions({
   handleIncrementGood,
@@ -7,13 +8,13 @@ export function FeedbackOptions({
 }) {
   return (
     <div>
-      <button type="button" onClick={handleIncrementGood}>
+      <button  className={s.button} type="button" onClick={handleIncrementGood}>
         Good
       </button>
-      <button type="button" onClick={handleIncrementNeutral}>
+      <button className={s.button} type="button" onClick={handleIncrementNeutral}>
         Neutral
       </button>
-      <button type="button" onClick={handleIncrementBad}>
+      <button className={s.button} type="button" onClick={handleIncrementBad}>
         Bad
       </button>
     </div>
